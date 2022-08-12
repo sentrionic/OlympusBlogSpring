@@ -1,0 +1,28 @@
+###### Database Properties  ###########################################
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.datasource.url=jdbc:postgresql://localhost:5432/olympus_blog
+spring.datasource.username=root
+spring.datasource.password=password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+############# Redis Properties ###########################################
+spring.session.store-type=redis
+spring.redis.host=localhost
+spring.redis.port=6379
+spring.session.redis.flush-mode=on_save
+spring.session.redis.namespace=spring:session
+############# AWS Properties ###########################################
+cloud.aws.storageBucketName=
+cloud.aws.region.static=
+cloud.aws.credentials.secret-key=
+cloud.aws.credentials.access-key=
+############# GMAIL Properties ###########################################
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=
+spring.mail.password=
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+############# Image Properties ###########################################
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
